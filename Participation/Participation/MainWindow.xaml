@@ -1,0 +1,26 @@
+﻿<Window x:Class="Participation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Participation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.verywellfamily.com/thmb/33xm07cjD4weowrktxQ05s9FmNo=/3864x2576/filters:fill(DBCCE8,1)/young-boy-mowing-lawn-with-toy-mower--king-city--ontario-530667510-5c1bb0d546e0fb000112dfe5.jpg"/>
+        </Grid.Background>
+        <Label x:Name="ManLabel" Content="Manufacturer" HorizontalAlignment="Left" Margin="419,0,0,0" VerticalAlignment="Center" Background="#FF020202" Foreground="White"/>
+        <TextBox x:Name="ManInput" HorizontalAlignment="Left" Margin="500,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="115" Height="26" Foreground="White" Background="Black"/>
+        <Label x:Name="ToyLbl" Content="Toy Name" HorizontalAlignment="Left" Margin="419,235,0,0" VerticalAlignment="Top" Height="24" Width="81" Background="Black" Foreground="White"/>
+        <TextBox x:Name="ToyInput" HorizontalAlignment="Left" Margin="500,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" Foreground="#FFFFFBFB" Background="#FF1A1919"/>
+        <Label x:Name="Price" Content="Price" HorizontalAlignment="Left" Margin="419,264,0,0" VerticalAlignment="Top" Height="24" Width="81" Background="#FF111010" Foreground="White"/>
+        <TextBox x:Name="PriceInput" HorizontalAlignment="Left" Margin="500,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="24" Foreground="White" Background="#FF080808"/>
+        <Button x:Name="Button" Content="Enter" HorizontalAlignment="Left" Margin="500,319,0,0" VerticalAlignment="Top" Height="38" Width="60" Background="#FFFD0202" Click="Button_Click"/>
+        <ListBox x:Name="ListOfToys" Margin="625,204,0,0" SelectionChanged="ListOfToys_SelectionChanged"/>
+        <Label x:Name="ToyListLbl" Content="Toys" HorizontalAlignment="Left" Margin="694,178,0,0" VerticalAlignment="Top" Background="#FF0E0E0E" Foreground="White"/>
+        <Label x:Name="UrlLbl" Content="URL" HorizontalAlignment="Left" Margin="419,288,0,0" VerticalAlignment="Top" Width="76" Background="#FF0B0B0B" Foreground="#FFFAFAFA"/>
+        <TextBox x:Name="urlInput" HorizontalAlignment="Left" Margin="498,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Height="26" Foreground="#FFFDFBFB" Background="#FF181818"/>
+
+    </Grid>
+</Window>
