@@ -32,14 +32,10 @@ namespace Participation
             t1.Manufacturer = ManInput.Text;
             t1.Name = ToyInput.Text;
             double priceFin = 0;
-            if (double.TryParse(PriceInput.Text, out priceFin) == false)
+            while (double.TryParse(PriceInput.Text, out priceFin) == false)
             {
                 MessageBox.Show("Hello user, please input a number.");
                 PriceInput.Text = PriceInput.Text;
-            }
-            else
-            {
-                t1.Price = priceFin;
             }
             t1.Image = urlInput.Text;
 
@@ -47,19 +43,13 @@ namespace Participation
             foreach (var item in ToyBox)
             {
                 ListOfToys.Items.Add(item);
-            }
-            ManInput.Clear();
-            ToyInput.Clear();
-            PriceInput.Clear();
-            urlInput.Clear();
+            } 
         }
 
         private void ListOfToys_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Toy selectedToy = (Toy)ListOfToys.SelectedItem;
             MessageBox.Show($"{selectedToy.GetAisle()}");
-
-
         }
     }
 }
